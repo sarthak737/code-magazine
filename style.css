@@ -269,7 +269,7 @@ nav p {
 } */
 
 /* FLOAT */
-
+/*
 .author-img {
   float: left;
 }
@@ -299,4 +299,64 @@ nav {
 
 .clear {
   clear: both;
+}
+*/
+
+/* Flexbox */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.author p {
+  margin-bottom: 0;
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.related {
+  margin: 20px;
+}
+
+article {
+  flex-basis: 825px;
+}
+
+aside {
+  flex-basis: 300px;
 }
